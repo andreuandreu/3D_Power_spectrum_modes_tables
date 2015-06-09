@@ -15,14 +15,15 @@ There are 6 columns for all the entries, which are the following quantities:
      equal for all the modes.
 3. mu: average value of mu of all the modes contributing to this bin.
      For k<k_t this is the value of mu that is equal for all the modes.
-4. P_L: linear matter power spectrum at k, computed at the redshift of the
+4. Before obtaining the power spectrum, the mean transmission of the simulated
+     spectra is set to the value  \bar{F}(z) = exp[-0.0023(1+z)^3.65] 
+     by renormalizing the optical depth, unless otherwise stated.
+5. P_L: linear matter power spectrum at k, computed at the redshift of the
      output, divided by L^3, where L is the box size.
      The box sizes of the simulations can be 50, 60, 80 or 120Mpc/h.
-     It is also and normalized by the mean F of that redshift, given by:
-     \bar{F}(z) = exp(-0.0023(1+z)^3.65), as long as is not said otherwise.
-5. P_F: transmission power spectrum at k,mu, obtained from the simulation
+6. P_F: transmission power spectrum at k,mu, obtained from the simulation
      output, divided by L^3.
-6. w=n_F: number of independent modes contributing to this bin, from all
+7. w=n_F: number of independent modes contributing to this bin, from all
      three projections of the simulation. This number grows as k^3.
-7. error=sigma_P: error computed from the number of independent modes,
+8. error=sigma_P: error computed from the number of independent modes,
    using epsilon=0.05 in equation 3.2. 
