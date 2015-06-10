@@ -27,3 +27,13 @@ There are 6 columns for all the entries, which are the following quantities:
      three projections of the simulation. This number grows as k^3.
 7. error=sigma_P: error computed from the number of independent modes,
    using epsilon=0.05 in equation 3.2. 
+
+The file names refer to the simulations as specified in Table 1, except
+for the following:
+
+F-z26 : fiducial model, fixing mean F to its value at z=2.6
+Seed2_Ray: fiducial model with seed number 2 including Rayleigh distribution
+Seed2_no-Ray: fiducial model with seed number 2 without Rayleigh distribution
+Seed3_Ray: fiducial model with seed number 3 including Rayleigh distribution
+Seed3_no-Ray: fiducial model with seed number 3 without Rayleigh distribution
+Sim_z26-fixed_F: fiducial model, for fixed z=2.6, varying mean F.
